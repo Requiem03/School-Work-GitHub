@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image Maps</title>
+	<link rel="stylesheet" href="screenstyle.css">
+	<script src="jquery-1.5.1.js"></script>
+	
+	<script src="imageMapResizer.min.js"></script>
+	<!--//I used this plugin to change where the ImageMap is on the 
+	picture when the picture resizes I got this from https://github.com/davidjbradshaw/image-map-resizer-->
+	
+</head>
+
+<body>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bio.html">Bio</a></li>
+			<li><a href="ImageMap.html" class="current">Image Map</a></li>
+			<li><a href="Form.html">Form</a></li>
+			<li><a href="Table.html">Favorite Books</a></li>
+			<li><a href="PictureGallery.html">Picture Gallery</a></li>
+			<li><a href="JavaScript.html">Dice Games</a></li>
+		</ul>
+	</nav>
+
+<div class="main">
+	
+<article>
+	
+	<header>
+		<h1>Louisville City FC</h1>
+	</header>
+	
+	<div class="section2">
+		
+		<div class="imgFlux">
+			<img src="pictures/tiffandchris2.jpg" alt="Tiffany and Chris at Soccer game" usemap="#imgmap1">
+		</div>
+		
+		<div class="caption">
+			<p>Picutre of Me and Tiffany at Louisville City FC soccer game. Click on either one of us to take you to the corresponding facebook page!</p>
+		</div>
+	
+		<map id="imgmap1" name="imgmap1"><area shape="rect" alt="Chris" title="" 
+		coords="182,20,368,248" href="https://www.facebook.com/christopher.bass843"/>
+		<area shape="rect" alt="Tiffany" title="" coords="402,64,616,322" 
+		href="https://www.facebook.com/tiffany.stewart.54379?fref=ts"/>
+		<!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) --></map>
+
+	</div>
+
+	<div class="section3">
+		
+		<div class="imgFlux">
+			<img src="pictures/louisvillecityfc.jpg" alt="Tiffany and Chris at Soccer game" usemap="#imgmap2">
+		</div>
+	
+		<div class="caption">
+		<p>Picutre of Louisville City FC soccer game. Click on the field to take you to their page!</p>
+		</div>
+	
+		<map id="imgmap2" name="imgmap2"><area shape="rect" alt="Louisville City FC" 
+		title="" coords="21,238,518,295" href="http://louisvillecityfc.com/"/>
+		<!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) --></map>
+	
+	</div>
+
+	<div class="section4">
+		<br>
+		<p>I like to play sports just as much as I like to play video games. Soccer and basketball being my favorite.
+		Louisville finally has a professional soccer team. Despite not being an MLS professional team they are pretty good
+		and did manage to hold their own pretty well against the MLS team Chicago Fire. Tiffany and I like to go watch them
+		play when they have home games. The above pictures were taken at Louisville Slugger Field where the Louisville City FC
+		host their home games.
+		</p>
+	</div>
+	
+</article>
+
+	
+<footer>
+	<p><a href="https://www.facebook.com/christopher.bass843"> Facebook page</a>
+	<a href="https://www.linkedin.com/pub/christopher-bass/63/70/731"> Linkedin page</a></p>
+</footer>
+	
+
+</div>
+<script>
+$("map").imageMapResize();
+//I used this plugin to change where the ImageMap is on the picture when the picture resizes I got this from https://github.com/davidjbradshaw/image-map-resizer
+</script>
+</body>
+</html>

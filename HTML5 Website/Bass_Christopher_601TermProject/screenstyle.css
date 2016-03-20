@@ -1,0 +1,234 @@
+h1{
+	border-bottom:5px ridge green;
+	margin:0;
+	padding:.50em;
+	font-size:200%;
+}
+
+.main{
+	margin:15px auto;
+	padding:25px 25px;
+	border:5px ridge green;
+	border-radius:25px;
+	width:80%;
+	background-color:#CCCCCC;
+	opacity:0.9;
+	font-family: Arial, Verdana, sans-serif;
+	font-size:100%;
+	overflow:auto;
+	
+}
+
+body{
+	background-image:url(pictures/zelda.jpg);
+}
+
+a:link{
+	color:#006600;
+}
+
+a:visited{
+	color:#006600;
+}
+
+a:hover{
+	color:red;
+	background-color:black;
+}
+
+a.current:link{
+	color:red;
+	background-color:black;
+}
+
+ a.current:visited{
+	color:red;
+	background-color:black;
+ }
+
+nav{
+	margin:0;
+	overflow:hidden;
+	border:5px ridge green;
+	border-radius:15px;
+	background-color:#CCCCCC;
+	width:83%;
+	text-align:center;
+	margin-left:8%;
+	font-size:120%;
+	opacity:0.9;
+	
+
+}
+
+nav ul{
+	margin:0;
+	padding:0.3em;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type:none;
+}
+
+nav>ul >li >a{
+	display:block;
+	line-height: 2em;
+	padding: .5em .5em;
+	text-decoration:none;
+}
+
+iframe{
+	border:none;
+
+}
+
+header{
+	color:black;
+	font-size: 150%;
+}
+
+.section1{
+	float:left;
+	width:70%;
+	margin:0;
+	padding:0;
+	overflow:auto;
+}
+
+.section2{
+	float:left;
+	width:60%;
+	margin:0;
+	padding:0;
+	overflow:auto;
+}
+
+.section3{
+	float:right;
+	width:40%;
+	margin:0;
+	padding:0;
+	overflow:auto;
+
+}
+
+.section4{
+	clear:both;
+	margin:0;
+	padding:0;
+	overflow:auto;
+}
+
+aside{
+	float:right;
+	width:30%;
+	margin:0;
+	padding:0;
+	overflow:auto;
+}
+
+.caption{
+	margin:0;
+	border:5px ridge green;
+	border-radius:25px;
+	width:65%;
+	background-color:#00CC33;
+	opacity:0.9;
+	font-family: Arial, Verdana, sans-serif;
+	font-size:80%;
+	padding:8px;
+}
+
+.form1{
+	text-align:left;
+	color:red;
+	font-family: Arial, Verdana, sans-serif;
+	font-size:100%;
+	padding-left:25px;
+	background-color:black;
+	width:20%;
+	float:left;
+}
+
+.form2{
+	text-align:left;
+	color:red;
+	font-family: Arial, Verdana, sans-serif;
+	font-size:100%;
+	padding-left:25px;
+	background-color:black;
+	width:20%;
+	float:right;
+}
+
+.footer_1{
+	border-top:5px ridge green;
+	padding-top:25%;
+	clear:both;
+	text-align:center;
+}
+
+.head2{
+	padding-left:25px;
+}
+
+table{
+	border:5px ridge black;
+	border-collapse:collapse;
+	background-color:#00CC33;
+}
+
+
+th, td{
+	border:5px ridge green;
+	padding: .2em .7em;
+	text-align:left;
+}
+
+
+.wrappedElement{
+	border:1px solid red;
+	
+}
+img.wrappedElement{
+	border-color:Green;
+	border-width: 4px;
+}
+
+footer{
+	border-top:5px ridge green;
+	clear:both;
+	text-align:center;
+}
+
+#pictureButtons{
+	padding-bottom:10px;
+	padding-top:10px;
+	
+}
+
+.figure{
+	padding:0;
+	margin:0;
+}
+
+.dice{
+	width:32px;
+	background:Green;
+	padding:10px;
+	font-size:25px;
+	text-align:center;
+	margin-top:8px;
+	display:block;
+	border:black 3px solid;
+}
+
+#image1{
+	float:left;
+}
+
+ .imgFlux img{
+	max-width: 100%; height: auto; 
+ }
+ 

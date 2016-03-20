@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Picture Gallery</title>
+	<link rel="stylesheet" href="screenstyle.css">
+	<script src="jquery-1.5.1.js"></script>
+</head>
+
+<body>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bio.html">Bio</a></li>
+			<li><a href="ImageMap.html">Image Map</a></li>
+			<li><a href="Form.html">Form</a></li>
+			<li><a href="Table.html">Favorite Books</a></li>
+			<li><a href="PictureGallery.html" class="current">Picture Gallery</a></li>
+			<li><a href="JavaScript.html">Dice Games</a></li>
+		</ul>
+	</nav>
+
+<div class="main">
+	
+<article>
+
+	<header>
+		<h1>Picture Gallery</h1>
+	</header>
+		
+	<div id = "pictureButtons">
+	<button id="ShowLeague">Show League Characters Only</button>
+	<button id="ShowCats">Show Cats Only</button>
+	<button id="ShowMe">Show Pictures with me</button>
+	<button id="ShowAll">Show All Images</button>
+	</div>
+	
+	<div class="section1">
+		
+			
+		<figure class= "Cats">
+		
+			<a href="pictures/cat.jpg">
+			<img src="pictures/cat.jpg" alt ="Siamese Cats tearing up stuff" height="140" width="200"></a>
+		
+			<a href="pictures/cat2.jpg">
+			<img src="pictures/cat2.jpg" alt ="Siamese Cats with new toys" height="140" width="200"></a>
+			
+			<a href="pictures/cat3.jpg">
+			<img src="pictures/cat3.jpg" alt ="Siamese Cats in cat tree" height="140" width="200"></a>
+			
+			<a href="pictures/cat4.jpg">
+			<img src="pictures/cat4.jpg" alt ="Siamese Cat playing video games" height="140" width="200"></a>
+			
+			
+		</figure>
+		
+		<figure class="Me">
+			
+			<a href="pictures/tiffandchris3.jpg">
+			<img src="pictures/tiffandchris3.jpg" alt ="Tiff, Chris and Tiffs Family" height="140" width="200"></a>
+			
+			<a href="pictures/tiffandchris4.jpg">
+			<img src="pictures/tiffandchris4.jpg" alt ="Tiff, Chris and Tiffs Family at Universal Studios" height="140" width="200"></a>
+			
+			<a href="pictures/Chris.jpg">
+			<img src="pictures/Chris.jpg" alt ="Chris dunking a basketball" height="140" width="200"></a>
+			
+		</figure>
+		
+		<figure class = "LeagueCharacters">
+			
+			<a href="pictures/League1.jpg">
+			<img src="pictures/League1.jpg" alt ="Hecarim" height="140" width="200"></a>
+			
+			<a href="pictures/League2.jpg">
+			<img src="pictures/League2.jpg" alt ="Shyvanna" height="140" width="200"></a>
+		
+			<a href="pictures/League3.jpg">
+			<img src="pictures/League3.jpg" alt ="Rammus" height="140" width="200"></a>
+			
+			<a href="pictures/League4.jpg">
+			<img src="pictures/League4.jpg" alt ="Singed" height="140" width="200"></a>
+			
+			<a href="pictures/League5.jpg">
+			<img src="pictures/League5.jpg" alt ="Teemo" height="140" width="200"></a>
+		</figure>
+
+	</div>
+
+<aside>
+	
+	<b>About this Gallery</b>
+	<p>This picture gallery has some pictures of my cats, my friends, me, and some of my favorite league champions. <br><br>
+	Clicking on an image will take you to the full size image. Although some of these images are actual size already.<br><br>
+	You can also click on the buttons to sort images according to what you wish to look at.
+	</p>
+	
+	
+</aside>
+
+</article>
+
+	
+<footer>
+	<p><a href="https://www.facebook.com/christopher.bass843"> Facebook page</a>
+	<a href="https://www.linkedin.com/pub/christopher-bass/63/70/731"> Linkedin page</a></p>
+</footer>
+	
+
+</div>
+<script>
+window.onload=function()
+{
+	$("img").addClass("wrappedElement");//on page load wrap all img elements
+}
+
+$(function()
+{
+	$("#ShowLeague").click(function()
+	{
+		$("figure").fadeOut(200);
+		$(".LeagueCharacters").fadeIn(2000);
+	
+	})
+})
+
+$(function()
+{
+	$("#ShowCats").click(function()
+	{
+		$("figure").fadeOut(200);
+		$(".Cats").fadeIn(2000);
+	
+	})
+})
+
+$(function()
+{
+	$("#ShowMe").click(function()
+	{
+		$("figure").fadeOut(200);
+		$(".Me").fadeIn(2000);
+	
+	})
+})
+
+$(function()
+{
+	$("#ShowAll").click(function()
+	{
+		$("figure").fadeIn(2000);
+	
+	})
+})
+
+
+</script>
+</body>
+</html>

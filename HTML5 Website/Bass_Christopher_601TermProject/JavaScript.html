@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dice Games</title>
+	<link rel="stylesheet" href="screenstyle.css">
+	<script src="jquery-1.5.1.js"></script>
+</head>
+
+<body>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bio.html">Bio</a></li>
+			<li><a href="ImageMap.html">Image Map</a></li>
+			<li><a href="Form.html">Form</a></li>
+			<li><a href="Table.html">Favorite Books</a></li>
+			<li><a href="PictureGallery.html">Picture Gallery</a></li>
+			<li><a href="JavaScript.html" class="current">Dice Games</a></li>
+		</ul>
+	</nav>
+
+<div class="main">
+
+<article>
+
+	<header>
+		<h1>Dice Games</h1>
+	</header>
+
+
+	
+	<div class="section1">
+	
+	<header>
+	<div class="imgFlux"><img src="pictures/dungeonsanddragons.jpg" alt ="Dungeons and Dragons Logo"></div>
+	</header>
+		
+		<p id="Welcome"></p>
+
+		<div id="d4" class="dice">0</div> <button onclick="rolld4()">Roll d4</button>
+		<div id="d6" class="dice">0</div> <button onclick="rolld6()">Roll d6</button>
+		<div id="d8" class="dice">0</div> <button onclick="rolld8()">Roll d8</button>
+		<div id="d10" class="dice">0</div> <button onclick="rolld10()">Roll d10</button>
+		<div id="d12" class="dice">0</div> <button onclick="rolld12()">Roll d12</button>
+		<div id="d20" class="dice">0</div> <button onclick="rolld20()">Roll d20</button>
+		
+		<div class="imgFlux">
+			<div id = "image1"><img src="pictures/dungeonsanddragons2.jpg" alt ="Dungeons and Dragons 5th edition books"></div>
+		</div>
+	</div>
+
+<aside>
+
+	<br><br><b>Dice Roller</b>
+	<p>Ever gone to a friends house to play Dungeons and Dragons and you are sitting there with your laptop about to create your character when you realize
+	That you forgot your dice?<br><br> Well good news you can use my dice roller program. Just click on the appropriate number of sides
+	for example if you want to roll a 4 sided die click on Roll d4, and the program will a 4 sided dice for you.</p>
+	
+	<div class="imgFlux">
+		<img src="pictures/dice.jpg" alt ="dice" height="240" width="300">
+	</div>
+	<br><br>
+	
+	<div class="imgFlux">
+		<img src="pictures/dungeonsanddragons4.jpg" alt ="Dungeons and Dragons sheets and dice"  height="340" width="400">
+	</div>
+
+</aside>
+
+</article>
+
+	
+<footer>
+	<p><a href="https://www.facebook.com/christopher.bass843"> Facebook page</a>
+	<a href="https://www.linkedin.com/pub/christopher-bass/63/70/731"> Linkedin page</a></p>
+</footer>
+	
+
+</div>
+
+<script>
+document.getElementById("Welcome").innerHTML =
+	"Welcome to the Site! Thank you for using my dice roller!";
+
+
+function rolld4(){
+	var die4 = document.getElementById("d4");
+	var d4 = Math.floor(Math.random()*4) +1;
+	die4.innerHTML=d4;
+
+	
+}
+	
+function rolld6(){
+	var die6 = document.getElementById("d6");
+	var d6 = Math.floor(Math.random()*6) +1;
+	die6.innerHTML=d6;
+	
+}
+
+function rolld8(){
+	var die8 = document.getElementById("d8");
+	var d8 = Math.floor(Math.random()*8) +1;
+	die8.innerHTML=d8;
+	
+}
+
+function rolld10(){
+	var die10 = document.getElementById("d10");
+	var d10 = Math.floor(Math.random()*10) +1;
+	die10.innerHTML=d10;
+	
+}
+
+function rolld12(){
+	var die12 = document.getElementById("d12");
+	var d12 = Math.floor(Math.random()*12) +1;
+	die12.innerHTML=d12;
+	
+}
+
+function rolld20(){
+	var die20 = document.getElementById("d20");
+	var d20 = Math.floor(Math.random()*20) +1;
+	die20.innerHTML=d20;
+	
+}
+</script>
+</body>
+</html>
